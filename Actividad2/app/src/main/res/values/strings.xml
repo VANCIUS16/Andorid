@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Actividad2</string>
+    <string name="result">Resultado</string>
+    <string name="clear">Limpiar</string>
+    <string name="del">Borrar</string>
+    <string name="div">/</string>
+    <string name="mult">*</string>
+    <string name="nine">9</string>
+    <string name="eight">8</string>
+    <string name="seven">7</string>
+    <string name="six">6</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="suma">+</string>
+    <string name="resta">-</string>
+    <string name="multiplicacion">*</string>
+    <string name="division">/</string>
+    <string name="igual">Igual</string>
+    <string name="uno">1</string>
+    <string name="dos">2</string>
+    <string name="action_settings">Settings</string>
+</resources>

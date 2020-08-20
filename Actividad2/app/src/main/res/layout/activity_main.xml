@@ -1,0 +1,90 @@
+                                                                                                                                                                                                                 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="#ffc71cff"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/layout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/n1"
+            android:layout_weight="0.10"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/n2"
+            android:layout_weight="0.10" />
+
+        <TextView
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/resultado"
+            android:layout_gravity="center_horizontal"
+            android:textIsSelectable="false"
+            android:layout_weight="0.07"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/suma"
+                android:id="@+id/suma"
+                android:layout_weight="0.10"
+                android:background="#2accb0"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/resta"
+                android:id="@+id/resta"
+                android:layout_weight="0.10"
+                android:background="#55ffe0"
+                android:onClick="Restar"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/multiplicacion"
+                android:id="@+id/multiplicacion"
+                android:layout_weight="0.10"
+                android:background="#ffd456"
+                android:onClick="Multiplicar"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/division"
+                android:id="@+id/division"
+                android:layout_weight="0.10"
+                android:background="#b7ffff"
+                android:onClick="Dividir"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+<!--http://equipoyemlaj.blogspot.com/2015/06/creacion-de-una-calculadora-en-android.html-->
