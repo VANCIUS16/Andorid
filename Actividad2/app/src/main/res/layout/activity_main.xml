@@ -1,107 +1,225 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    tools:context=".MainActivity">
-    
-    <GridLayout
+ <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="#302E2F"
+        android:clipToPadding="false"
         android:columnCount="4"
-        android:useDefaultMargins="true"
-        android:context=".MainActivity">
+     android:layout_gravity="fill_horizontal"
+
+        >
+
+        <TextView
+            android:text="Calculadora"
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="319dp"
-            android:layout_row="0"
-            android:layout_rowWeight="3"
-            android:layout_column="0"
-            android:layout_columnSpan="4"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill" />
-        <Button
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="1"/>
+            android:layout_rowWeight=".1"
+            android:layout_columnSpan="4"/>
+
         <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="2"/>
+            android:backgroundTint="#0B0909"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:text="AC"
+            android:textColor="#ffffff" />
+
         <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="3"/>
+            android:backgroundTint="#0B0909"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:text="Delet"
+            android:textColor="#ffffff" />
+
         <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="+"/>
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:backgroundTint="#0B0909"
+            android:text="%"
+            android:textColor="#ffffff" />
+
         <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="4"/>
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:backgroundTint="#0B0909"
+
+            android:text="/"
+            android:textColor=" #d62600 " />
+
         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="#0B0909"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:text="1"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="5"/>
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:backgroundTint="#0B0909"
+            android:text="2"
+            android:textColor="#ffffff" />
+
         <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="6"/>
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:backgroundTint="#0B0909"
+            android:text="3"
+            android:textColor="#ffffff" />
+
         <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="-"/>
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:backgroundTint="#0B0909"
+            android:text="x"
+            android:textColor=" #d62600 " />
+
         <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="7"/>
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:backgroundTint="#0B0909"
+            android:text="4"
+            android:textColor="#ffffff" />
+
         <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="8"/>
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:backgroundTint="#0B0909"
+            android:text="5"
+            android:textColor="#ffffff" />
+
         <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="9"/>
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:backgroundTint="#0B0909"
+            android:text="6"
+            android:textColor="#ffffff" />
+
         <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="*"/>
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:backgroundTint="#0B0909"
+            android:text="-"
+            android:textColor=" #d62600 " />
+
         <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="C"/>
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:backgroundTint="#0B0909"
+            android:text="7"
+            android:textColor="#ffffff" />
+
         <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="0"/>
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:backgroundTint="#0B0909"
+            android:text="8"
+            android:textColor="#ffffff" />
+
         <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="."/>
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:backgroundTint="#0B0909"
+            android:text="9"
+            android:textColor="#ffffff" />
+
         <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="/"/>
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:backgroundTint="#0B0909"
+            android:text="*"
+            android:textColor=" #d62600 " />
+
         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:backgroundTint="#0B0909"
+            android:text="."
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:backgroundTint="#0B0909"
+            android:text="0"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:backgroundTint="#0B0909"
+            android:text="()"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight=".25"
+            android:backgroundTint="#FFC107"
+            android:text="=" />
+
+
+    </GridLayout>
+
+
+<!--
+<Button
             android:layout_width="171dp"
             android:layout_height="wrap_content"
             android:layout_columnSpan="2"
             android:text="DELET" />
+
         <Button
             android:layout_width="171dp"
             android:layout_height="wrap_content"
             android:layout_columnSpan="2"
             android:text="ENTER" />
-    </GridLayout>
-    
-    
-<!--
+
        <Button
             android:id="@+id/button19"
             android:layout_width="wrap_content"
@@ -219,5 +337,4 @@
         </LinearLayout>
 
     </LinearLayout>-->
-</androidx.constraintlayout.widget.ConstraintLayout>
 <!--http://equipoyemlaj.blogspot.com/2015/06/creacion-de-una-calculadora-en-android.html-->
